@@ -38,16 +38,256 @@
   <!-- JSON‑LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "T‑Bank Guide",
-    "url": "https://example.com/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://example.com/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Карта T-Bank Black",
+      "description": "Дебетовая карта с кэшбэком до 30% рублями, бесплатным обслуживанием и переводы без комиссии.",
+      "url": "https://www.tbank.ru/cards/debit-cards/tinkoff-black/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Дебетовые карты",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "0",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "1000"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Исламская карта T-Банка",
+      "description": "Халяльная дебетовая карта без процентов, с кэшбэком и инвестициями по шариату.",
+      "url": "https://www.tbank.ru/cards/debit-cards/islamic/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Дебетовые карты",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "0",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Подписка Pro",
+      "description": "Подписка для повышенного кэшбэка, скидок на обслуживание и бонусов у партнеров.",
+      "url": "https://www.tbank.ru/pro/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Подписки",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "299",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Рефинансирование кредитов",
+      "description": "Объедините кредиты с ставкой от 11.9%, до 5 млн ₽, онлайн-заявка.",
+      "url": "https://www.tbank.ru/loans/refinancing/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Кредиты",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "lowPrice": "100000",
+        "highPrice": "5000000",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "КАСКО",
+      "description": "Страхование авто с покрытием до 100%, онлайн-расчет и скидки.",
+      "url": "https://www.tbank.ru/insurance/kasko/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Страхование",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "5000",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Страхование ипотеки",
+      "description": "Обязательное страхование для ипотеки с низкими тарифами.",
+      "url": "https://www.tbank.ru/insurance/mortgage/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Страхование",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "1000",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "T-Mobile",
+      "description": "Сотовый оператор с безлимитом, роумингом и интеграцией с банком.",
+      "url": "https://www.tbank.ru/mobile/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Мобильная связь",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "500",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Счет для инвестиций",
+      "description": "Брокерский счет с акциями, облигациями и низкими комиссиями.",
+      "url": "https://www.tbank.ru/invest/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Инвестиции",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "0",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Счет для бизнеса",
+      "description": "Расчетный счет для ИП и ООО с бесплатным открытием.",
+      "url": "https://www.tbank.ru/business/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Бизнес",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "0",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Регистрация бизнеса",
+      "description": "Бесплатная регистрация ИП или ООО онлайн.",
+      "url": "https://www.tbank.ru/business/registration/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Бизнес",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "0",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Вклад от 2 месяцев",
+      "description": "Вклад с ставкой до 15%, от 50 000 ₽, на срок от 2 месяцев.",
+      "url": "https://www.tbank.ru/savings/deposits/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Вклады",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "lowPrice": "50000",
+        "highPrice": "10000000",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Сервис Топливо",
+      "description": "Кэшбэк на топливо до 10% на АЗС партнеров.",
+      "url": "https://www.tbank.ru/services/fuel/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Сервисы",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "0",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Автосервис",
+      "description": "Сервис для авто: страхование, кредиты на покупку, партнерские СТО.",
+      "url": "https://www.tbank.ru/auto/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Авто",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "0",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Работа в T-Банке",
+      "description": "Вакансии в IT, финансах, поддержке с удаленной работой.",
+      "url": "https://www.tbank.ru/career/",
+      "brand": {
+        "@type": "Brand",
+        "name": "T-Банк"
+      },
+      "category": "Карьера",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "0",
+        "availability": "https://schema.org/InStock"
+      }
     }
-  }
+  ]
+}
   </script>
   <style>
     :root { scroll-behavior: smooth; }
